@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test task</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker-bulma.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="page">
+		<section class="form">
+			<h1 class="form__title">Виберіть дату народження</h1>
+			<form class="form__block" id="date_form" novalidate="novalidate">
+				<div class="form__wrapper">
+					<div class="form__field">
+						<label class="form__label" for="birthday_start">Від:</label>
+						<input class="form__input" type="text" id="birthday_start" name="birthday_start" placeholder="dd.mm.yyyy">
+					</div>
+					<div class="form__field">
+						<label class="form__label" for="birthday_end">До:</label>
+						<input class="form__input" type="text" id="birthday_end" name="birthday_end" placeholder="dd.mm.yyyy">
+					</div>
+					<div class="form__field">
+						<input type="submit" value="Оновити" class="form__submit">
+					</div>
+				</div>
+			</form>
+		</section>
+		<div class="users"></div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
